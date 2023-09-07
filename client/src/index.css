@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Prompt', sans-serif;
+}
+
+.pageContainer{
+    height: 100vh;
+    background-image: url("./images/background.avif");
+    background-position: center;
+}
+
+.descriptionText {
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* 
+img {
+    object-position: 75%;
+  }
+   */
