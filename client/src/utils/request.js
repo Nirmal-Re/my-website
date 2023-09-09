@@ -1,5 +1,12 @@
 import axios from "axios";
 
-postRequest = () => {};
+const BACKEND_URL = "http://localhost:5000";
 
-getRequest = () => {};
+const postRequest = () => {};
+
+const getRequest = async (url) => {
+  const data = await axios.get(`${BACKEND_URL}${url}`);
+  console.log(data);
+};
+
+export { getRequest, postRequest };

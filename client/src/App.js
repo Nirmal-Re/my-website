@@ -1,8 +1,13 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useActionData } from "react-router-dom";
 import { Navbar, Home, Blogs, Projects, BlogDetails } from "./components";
+import { getRequest } from "./utils/request.js";
 
 const App = () => {
+  useEffect(() => {
+    const apihit = "/hello";
+    getRequest(apihit);
+  });
   return (
     <BrowserRouter>
       <Navbar />
