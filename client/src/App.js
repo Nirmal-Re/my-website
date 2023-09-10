@@ -4,14 +4,14 @@ import { Navbar, Home, Blogs, Projects, BlogDetails } from "./components";
 import { getRequest } from "./utils/request.js";
 
 const App = () => {
-  useEffect(() => {
-    const apihit = "/hello";
-    getRequest(apihit);
-  });
+  // useEffect(() => {
+  //   const apihit = "/hello";
+  //   getRequest(apihit);
+  // });
   return (
     <BrowserRouter>
-      <Navbar />
       <div className="pageContainer">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>

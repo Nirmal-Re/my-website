@@ -4,14 +4,16 @@
     top: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, rgba(107,193,127,1) 76%, rgba(2,28,65,1) 97%, rgba(2,0,36,1) 100%, rgba(9,87,200,0.969625350140056) 100%);
+    background: #0F4045;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .navbarContainerLeft {
-    width:40%;
-    padding-left: 20px;
+    margin: 30px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .navbarContainerRight {

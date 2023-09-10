@@ -1,20 +1,43 @@
 .homePageContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.hopePageSubContainer {
     display: flex;
-    font-weight: bold;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+    gap: 20px;
+    height: 100%;
 }
 
-.image {
+.homePageSubContainerLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.homePageSubContainerRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro {
     position: relative;
-    top: 500px;
+    top: 10%;
+    font-family: 'Trocchi', serif;
+    text-align: center;
+    flex-basis: 231px;
+    color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .photo {
+        display: none;
+    }
+    .intro{
+        width: 100%;
+    }
+    .homePageContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+}
+    

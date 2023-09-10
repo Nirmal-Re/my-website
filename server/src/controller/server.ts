@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/blogs", (req, res) => {
+app.get("/", (req, res) => {
   res.json();
 });
 

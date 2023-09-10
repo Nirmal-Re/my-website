@@ -28,10 +28,10 @@ const react_router_dom_1 = require("react-router-dom");
 const components_1 = require("./components");
 const request_js_1 = require("./utils/request.js");
 const App = () => {
-    (0, react_1.useEffect)(() => {
-        const apihit = "/hello";
-        (0, request_js_1.getRequest)(apihit);
-    });
+    // useEffect(() => {
+    //   const apihit = "/hello";
+    //   getRequest(apihit);
+    // });
     return (<react_router_dom_1.BrowserRouter>
       <components_1.Navbar />
       <div className="pageContainer">
