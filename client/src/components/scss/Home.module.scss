@@ -20,11 +20,18 @@
 
 .intro {
     position: relative;
-    top: 10%;
+    top: 15%;
+    left: 10%;
     font-family: 'Trocchi', serif;
     text-align: center;
     flex-basis: 231px;
     color: white;
+}
+
+.photo {
+    position: relative;
+    top: 10%;
+    left: 10%;
 }
 
 @media screen and (max-width: 768px) {
