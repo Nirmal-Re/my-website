@@ -10,10 +10,11 @@ const Navbar = () => {
     return (<nav className={Navbar_module_scss_1.default.navbarContainer}>
       <div className={Navbar_module_scss_1.default.navbarContainerLeft}>
         <react_router_dom_1.Link to="/">HOME</react_router_dom_1.Link>
-      </div>
-      <div className={Navbar_module_scss_1.default.navbarContainerRight}>
         <react_router_dom_1.Link to="/blogs">BLOGS</react_router_dom_1.Link>
         <react_router_dom_1.Link to="/projects">PROJECTS</react_router_dom_1.Link>
+      </div>
+      <div className={Navbar_module_scss_1.default.navbarContainerRight}>
+       
       </div>
     </nav>);
 };

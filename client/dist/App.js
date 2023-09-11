@@ -33,8 +33,8 @@ const App = () => {
     //   getRequest(apihit);
     // });
     return (<react_router_dom_1.BrowserRouter>
-      <components_1.Navbar />
       <div className="pageContainer">
+        <components_1.Navbar />
         <react_router_dom_1.Routes>
           <react_router_dom_1.Route path="/" element={<components_1.Home />}></react_router_dom_1.Route>
           <react_router_dom_1.Route path="/blogs" element={<components_1.Blogs />}></react_router_dom_1.Route>
