@@ -1,38 +1,33 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Prompt', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-family: "Prompt", sans-serif;
 }
 
-.pageContainer{
-    background-color: #011E22;
-    overflow: clip;
-    height: 100vh;
-    width: 100%;
-}
-
-.descriptionText {
-    color:white;
-    font-family: 'Open Sans', sans-serif;
+.pageContainer {
+  background-color: #011e22;
+  overflow: clip;
+  height: 100vh;
+  width: 100%;
 }
 
 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;;
-    font-family: 'Open Sans', sans-serif;
-    background-color: bisque;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bolder;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: bisque;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 th {
-    color: white;
+  color: white;
 }

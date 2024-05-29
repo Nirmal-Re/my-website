@@ -14,9 +14,9 @@ app.use(function (req, res, next) {
 });
 
 app.get("/", (req, res) => {
-  res.json();
+  res.json({ key: "value" });
 });
 
 app.listen(5000, () => {
-  console.log("Server is listening on port 5000");
+  console.log("Server is listening on prt 4000");
 });

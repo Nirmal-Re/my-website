@@ -1,23 +1,27 @@
 import styles from "./scss/Home.module.scss";
-import meCutOut from "../images/me-no-background-reduced.png";
-import meCutOut0 from "../images/me-removebg.png";
-import { ImageCard } from "./subComponents/index.js";
-
-
+import cv from "../pdf/cv.pdf";
 const Home = () => {
   return (
     <div className={styles.homePageContainer}>
       <div className={`${styles.homePageSubContainerLeft}`}>
-       <img src={meCutOut} alt="" className={styles.photo}/>
-       <h1 className={`${styles.intro}`}> Hi! I'm Nirmal <br></br>
-        A programmer
-        </h1>
+        <div className={`${styles.introContainer}`}>
+          <p className={`${styles.intro}`}>
+            {" "}
+            Hi!<br></br> I'm{" "}
+            <span className={`${styles.fontColor}`}>Nirmal</span>, <br></br>A
+            programmer
+          </p>
+        </div>
       </div>
       <div className={`${styles.homePageSubContainerRight}`}>
-        <button>CV</button>
-        <p className="descriptionText"> I love coding and self-improvement. <br/> In this website, you will find my projects and blogs I have written</p>
+        <a href={cv} target="_blank" rel="noopener noreferrer">
+          <button className={`${styles.cvButton}`}>CV</button>
+        </a>
+        <p className={`${styles.descriptionText}`}>
+          I love coding and learning. <br /> In this website, you will find my
+          projects and blogs I have written. Though, there are none currently.
+        </p>
       </div>
-      
     </div>
   );
 };

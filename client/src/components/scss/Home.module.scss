@@ -1,50 +1,133 @@
-.homePageContainer{
-    display: flex;
-    gap: 20px;
-    height: 100%;
+.homePageContainer {
+  display: flex;
+  gap: 20px;
+  height: 100%;
 }
 
 .homePageSubContainerLeft {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-   
+  width: 50%;
+  background-image: url("../../images/me-no-background-reduced.png");
+  background-size: 60%; // Add this line
+  background-repeat: no-repeat;
+  background-position: left 0px top 150px;
 }
 
-.homePageSubContainerRight{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.homePageSubContainerRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+// .intro {
+//   position: relative;
+//   top: 0%;
+//   left: 10%;
+//   font-family: "Trocchi", serif;
+//   font-size: 2em;
+//   text-align: center;
+//   color: white;
+// }
+
+.introContainer {
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 70%;
+}
 .intro {
-    position: relative;
-    top: 15%;
-    left: 10%;
-    font-family: 'Trocchi', serif;
-    text-align: center;
-    flex-basis: 231px;
-    color: white;
+  font-family: monospace, serif;
+  font-size: 2em;
+
+  width: 100%;
+  letter-spacing: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  animation: typing 2s forwards;
 }
 
-.photo {
-    position: relative;
-    top: 10%;
-    left: 10%;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.cvButton {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  font-family: monospace, serif;
+  font-size: 1.5em;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cvButton:hover {
+  background-color: #45a049;
+}
+
+.fontColor {
+  color: #4caf50;
+}
+
+.descriptionText {
+  position: relative;
+  right: 20%;
+  font-size: 1.5rem;
+  color: white;
+  font-family: monospace, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
-    .photo {
-        display: none;
-    }
-    .intro{
-        width: 100%;
-    }
-    .homePageContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
+  .homePageContainer {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .homePageSubContainerLeft {
+    background-image: none;
+    width: 100%;
+  }
+
+  .introContainer {
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  .homePageSubContainerRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .descriptionText {
+    position: static;
+    text-align: center;
+    right: 0%;
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace, sans-serif;
+  }
+
+  .cvButton {
+    position: static;
+    display: inline-block;
+  }
+
+  .intro {
+    width: 100%;
+  }
 }
-    

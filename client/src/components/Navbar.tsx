@@ -6,12 +6,15 @@ const Navbar = () => {
   return (
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarContainerLeft}>
-        <Link to="/">HOME</Link>
-        <Link to="/blogs">BLOGS</Link>
-        <Link to="/projects">PROJECTS</Link>
-      </div>
-      <div className={styles.navbarContainerRight}>
-       
+        <Link className={styles.link} to="/">
+          HOME
+        </Link>
+        <Link className={styles.link} to="/blogs">
+          BLOGS
+        </Link>
+        <Link className={styles.link} to="/projects">
+          PROJECTS
+        </Link>
       </div>
     </nav>
   );

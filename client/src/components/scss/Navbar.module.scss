@@ -1,24 +1,33 @@
 .navbarContainer {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    background: #0F4045;
-    align-items: center;
-    opacity: 0.9;
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #0f4045;
+  align-items: center;
+  opacity: 0.9;
 }
 
 .navbarContainerLeft {
-    margin: 30px;
-    width: 40%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
 }
 
-.navbarContainerRight {
-    margin-left: 20%;
-    width:30%;
-    display:flex;
-    justify-content: space-around;
+.link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.link:hover {
+  background: #1a6a71;
+  border-radius: 5px;
 }
