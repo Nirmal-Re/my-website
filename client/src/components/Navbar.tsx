@@ -7,13 +7,15 @@ const Navbar = () => {
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarContainerLeft}>
         <Link className={styles.link} to="/">
-          HOME
+          nb.
         </Link>
+      </div>
+      <div className={styles.navbarContainerRight}>
         <Link className={styles.link} to="/blogs">
-          BLOGS
+          Blogs
         </Link>
         <Link className={styles.link} to="/projects">
-          PROJECTS
+          Projects
         </Link>
       </div>
     </nav>

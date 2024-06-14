@@ -3,19 +3,28 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 80px;
-  background: #0f4045;
   align-items: center;
   opacity: 0.9;
 }
 
 .navbarContainerLeft {
+  display: flex;
   align-items: center;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   padding-left: 10px;
+}
+
+.navbarContainerRight {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .link {
@@ -28,6 +37,6 @@
 }
 
 .link:hover {
-  background: #1a6a71;
+  background: #25757c;
   border-radius: 5px;
 }
