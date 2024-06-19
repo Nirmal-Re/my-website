@@ -44,7 +44,7 @@ const Home = () => {
       <div className={styles.line}></div>
       <div className={styles.cvandemail}>
         <p style={{ padding: "0px", margin: "0px" }}>
-          {" "}
+          {" "}w
           I am thrilled to answer any question you might have about my project{" "}
           {"->"}
         </p>
