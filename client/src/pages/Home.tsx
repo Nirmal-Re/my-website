@@ -1,5 +1,6 @@
 import styles from "./scss/Home.module.scss";
-import cv from "../pdf/cv.pdf";
+import cv from "../resources/pdf/cv.pdf";
+
 const Home = () => {
   return (
     <div className={styles.home}>
@@ -22,18 +23,18 @@ const Home = () => {
               grow.
             </p>
           </div>
-          <table className={styles.table}>
-            <tr>
-              <td className={styles.tableLeft}>Main Programming Languages:</td>
+          <table className={styles.tableForAddInfo}>
+            <tr className={styles.tableElement}>
+              <td className={styles.tableLeft}>Programming Languages</td>
               <td className={styles.tableRight}>
                 Nodejs, Typescript, React, Python, Elixir, Java, HTML, CSS
               </td>
             </tr>
-            <tr>
+            <tr className={styles.tableElement}>
               <td className={styles.tableLeft}>Cloud Platform</td>
               <td className={styles.tableRight}>Azure</td>
             </tr>
-            <tr>
+            <tr className={styles.tableElement}>
               <td className={styles.tableLeft}>Main Skills</td>
               <td className={styles.tableRight}>Programming, Deploying</td>
             </tr>
@@ -42,15 +43,21 @@ const Home = () => {
         <div className={`${styles.homePageSubContainerRight}`}></div>
       </div>
       <div className={styles.line}></div>
-      <div className={styles.cvandemail}>
-        <p style={{ padding: "0px", margin: "0px" }}>
-          {" "}w
-          I am thrilled to answer any question you might have about my project{" "}
+      <div className={styles.contact}>
+        <p
+          style={{ padding: "0px", margin: "0px" }}
+          className={styles.descriptionText}
+        >
+          I am thrilled to answer any question you might have about my project
           {"->"}
         </p>
-        <a href={cv} target="_blank" rel="noopener noreferrer">
-          CV
-        </a>
+        <span></span>
+        <div className={styles.cvAndEmail}>
+          <p className={styles.email}>bhdnirmal99+mywebsite@gmail.com</p>
+          <a href={cv} target="_blank" rel="noopener noreferrer">
+            View CV
+          </a>
+        </div>
       </div>
     </div>
   );

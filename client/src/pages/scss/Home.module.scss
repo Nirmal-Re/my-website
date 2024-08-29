@@ -10,7 +10,7 @@
 
 .homePageSubContainerRight {
   width: 50%;
-  background-image: url("../../images/me-no-background-reduced.png");
+  background-image: url("../../resources/images/me-no-background-reduced.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -38,10 +38,10 @@
 
 .descriptionText {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #606060;
-  font-family: "DM Sans", serif;
-  font-weight: 500;
+  font-family: "Inter", serif;
+  font-weight: 300;
 }
 
 .line {
@@ -53,6 +53,54 @@
 .cvandemail {
   display: flex;
   gap: 20px;
+}
+
+.tableForAddInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.tableElement {
+  display: flex;
+}
+
+.tableLeft {
+  font-family: "Inter", sans-serif;
+  width: 150px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tableRight {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: start;
+  font-size: 1.01rem;
+  padding-left: 0.7em;
+  color: #606060;
+}
+
+.line {
+  margin: 2em 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+}
+
+.email {
+  margin: 0;
+}
+
+.cvAndEmail {
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #606060;
 }
 
 @media screen and (max-width: 768px) {

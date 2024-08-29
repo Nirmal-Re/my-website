@@ -1,13 +1,9 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useActionData } from "react-router-dom";
-import { Navbar, Home, Blogs, Projects, BlogDetails } from "./components";
-import { getRequest } from "./utils/request.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components";
+import { Home, Blogs, Projects } from "pages";
 
 const App = () => {
-  // useEffect(() => {
-  //   const apihit = "/hello";
-  //   getRequest(apihit);
-  // });
   return (
     <BrowserRouter>
       <div className="pageContainer">
@@ -15,7 +11,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>
-          <Route path="/blogs/:id" element={<BlogDetails />} />
           <Route path="/projects" element={<Projects />}></Route>
         </Routes>
       </div>
