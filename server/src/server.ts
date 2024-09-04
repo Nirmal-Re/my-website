@@ -1,6 +1,11 @@
 import express from "express";
 import cors from "cors";
 
+import router from "./router/index.js";
+import { initializeDatabase } from "./modal/db.js";
+
+initializeDatabase();
+
 const app = express();
 app.use(cors({ credentials: true, origin: true }));
 app.use(function (req, res, next) {
@@ -13,10 +18,8 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.json({ key: "value" });
-});
+app.use("/blog", router());
 
 app.listen(5000, () => {
-  console.log("Server is listening on prt 4000");
+  console.log("Server is listening on port 5000");
 });

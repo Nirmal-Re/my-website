@@ -29,14 +29,16 @@
 
 .link {
   height: 100%;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
+  transition: font-size 0.3s ease; /* Animate the border-bottom property */
 }
 
 .link:hover {
-  background: #25757c;
-  border-radius: 5px;
+  font-size: 1.1rem;
 }

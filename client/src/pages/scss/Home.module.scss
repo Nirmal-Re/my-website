@@ -12,8 +12,8 @@
   width: 50%;
   background-image: url("../../resources/images/me-no-background-reduced.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top right;
+  background-size: 400px;
 }
 
 .homePageSubContainerLeft {
@@ -48,6 +48,7 @@
   width: 100%;
   height: 1px;
   background-color: #606060;
+  margin: 2em 0;
 }
 
 .cvandemail {
@@ -83,10 +84,6 @@
   color: #606060;
 }
 
-.line {
-  margin: 2em 0;
-}
-
 .contact {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
@@ -103,39 +100,13 @@
   color: #606060;
 }
 
-@media screen and (max-width: 768px) {
-  .homePageContainer {
-    display: flex;
-    gap: 20px;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+@media screen and (max-width: 891px) {
   .homePageSubContainerLeft {
-    background-image: none;
     width: 100%;
   }
 
   .homePageSubContainerRight {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .descriptionText {
-    position: static;
-    text-align: center;
-    right: 0%;
-    font-size: 1.5rem;
-    color: white;
-    font-family: monospace, sans-serif;
-  }
-
-  .cvButton {
-    position: static;
-    display: inline-block;
-  }
-
-  .intro {
-    width: 100%;
+    background-image: none;
+    display: none;
   }
 }
